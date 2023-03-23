@@ -64,5 +64,5 @@ def petabyteParaTerabyte(valorASerConvertido):
 
 print('Insira o valor a ser convertido')
 entradaDoTecladoValorASerConvertido  = converterStringParaFloat(input())
-valorConvertido = terabyteParagigabyte(entradaDoTecladoValorASerConvertido)
+valorConvertido = petabyteParaTerabyte(entradaDoTecladoValorASerConvertido)
 print(valorConvertido)
