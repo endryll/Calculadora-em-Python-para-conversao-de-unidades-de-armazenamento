@@ -1,3 +1,15 @@
+def menu():
+    print('''
+        MENU:
+
+        [a] - Cadastrar novo voto
+        [b] - Ver Resultado
+        [c] - Sair
+    ''')
+    str(input('Escolha uma opção: '))
+
+bitParaByte = "a"
+
 def converterStringParaFloat(value):
     print('Valor convertido de str para float')
     return float(value)
@@ -22,7 +34,17 @@ def kilobyteparabyte(valorASerConvertido):
     bytescalculado = valorASerConvertido * 1024
     return bytescalculado
 
+def kilobyteparamegabyte(valorASerConvertido):
+    print('Valor convertido de kilobyte para megabyte')
+    kilobytecalculado = valorASerConvertido / 1024
+    return kilobytecalculado
+
+def megabeteparakilobyte(valorASerConvertido):
+    print('Valor convertido de megabyte para kilobyte')
+    bytescalculado = valorASerConvertido * 1024
+    return bytescalculado
+
 print('Insira o valor a ser convertido')
 entradaDoTecladoValorASerConvertido  = converterStringParaFloat(input())
-valorConvertido = kilobyteparabyte(entradaDoTecladoValorASerConvertido)
+valorConvertido = megabeteparakilobyte(entradaDoTecladoValorASerConvertido)
 print(valorConvertido)
