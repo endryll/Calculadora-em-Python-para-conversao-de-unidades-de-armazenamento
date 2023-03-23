@@ -25,7 +25,7 @@ def byteParaBit(valorASerConvertido):
     return bitsCalculado
 
 def byteparakilobyte(valorASerConvertido):
-    print('Valor convertido de byte para kilobyte.')
+    print('Valor convertido de byte para kilobyte')
     kilobytecalculado = valorASerConvertido / 1024
     return kilobytecalculado
 
