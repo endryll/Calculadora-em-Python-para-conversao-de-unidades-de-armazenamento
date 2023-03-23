@@ -1,15 +1,3 @@
-def menu():
-    print('''
-        MENU:
-
-        [a] - Cadastrar novo voto
-        [b] - Ver Resultado
-        [c] - Sair
-    ''')
-    str(input('Escolha uma opção: '))
-
-bitParaByte = "a"
-
 def converterStringParaFloat(value):
     print('Valor convertido de str para float')
     return float(value)
@@ -36,15 +24,35 @@ def kilobyteparabyte(valorASerConvertido):
 
 def kilobyteparamegabyte(valorASerConvertido):
     print('Valor convertido de kilobyte para megabyte')
-    kilobytecalculado = valorASerConvertido / 1024
-    return kilobytecalculado
+    megabytescalculado = valorASerConvertido / 1024
+    return megabytescalculado
 
 def megabeteparakilobyte(valorASerConvertido):
     print('Valor convertido de megabyte para kilobyte')
-    bytescalculado = valorASerConvertido * 1024
-    return bytescalculado
+    kilobytescalculado = valorASerConvertido * 1024
+    return kilobytescalculado
+
+def megabyteparagigabyte(valorASerConvertido):
+    print('Valor convertido de megabyte para gigabyte')
+    gigabytecalculado = valorASerConvertido / 1024
+    return gigabytecalculado
+
+def gigabyteparamegabyte(valorASerConvertido):
+    print('Valor convertido de gigabyte para megabyte')
+    megabytescalculado = valorASerConvertido * 1024
+    return megabytescalculado
+
+def gigabyteParaTerabyte(valorASerConvertido):
+    print('Valor convertido de gigabyte para terabyte')
+    terabytesCalculado = valorASerConvertido / 1024
+    return terabytesCalculado
+
+def terabyteParagigabyte(valorASerConvertido):
+    print('Valor convertido de terabyte para gigabyte')
+    gigabytesCalculado = valorASerConvertido * 1024
+    return gigabytesCalculado
 
 print('Insira o valor a ser convertido')
 entradaDoTecladoValorASerConvertido  = converterStringParaFloat(input())
-valorConvertido = megabeteparakilobyte(entradaDoTecladoValorASerConvertido)
+valorConvertido = gigabyteparamegabyte(entradaDoTecladoValorASerConvertido)
 print(valorConvertido)
