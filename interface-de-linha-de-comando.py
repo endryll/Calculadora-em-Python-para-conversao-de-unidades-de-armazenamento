@@ -31,3 +31,8 @@ if(funcEscolha == '6'):
     entradaDoTecladoValorASerConvertido = converterStringParaFloat(input())
     valorConvertido = megabeteparakilobyte(entradaDoTecladoValorASerConvertido)
     print(valorConvertido)
+
+if(funcEscolha == '6'):
+    entradaDoTecladoValorASerConvertido = converterStringParaFloat(input())
+    valorConvertido = megabeteparakilobyte(entradaDoTecladoValorASerConvertido)
+    print(valorConvertido)
